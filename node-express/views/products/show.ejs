@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail product</title>
+    <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+    <h1><%= product.name %></h1>
+    <div class="card">
+        <ul>
+            <li>Brand: <%= product.brand %></li>
+            <li>warna: <%= product.color %></li>
+            <li>Harga: <%= product.price %></li>
+            <li>type:
+                <!-- untuk memfilter data sesuai kategori -->
+               <button>
+                <a href="/products?category=<%= product.category %>" >
+                    <!-- //-// -->
+                        <%= product.category %>
+                    </a>
+               </button> 
+            </li>
+            <li>
+                <button>
+                    <a href="/products">kembali</a>
+                </button>
+            </li>
+           <li>
+            <button>
+                <a href="/products/<%= product._id %>/edit">Edit</a>
+            </button>
+            </li> 
+          <li><form action="/products/<%= product._id %>?_method=DELETE" method="post">
+            <button type="submit">Delete</button>
+        </form></li>  
+        </ul>
+    </div>
+</body>
+</html>

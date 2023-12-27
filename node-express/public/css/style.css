@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+
+h1, h2 {
+    text-align: center;
+}
+ol {
+   margin: 20px;
+   display: flex;
+   gap: 20px;
+}
+li {
+    list-style: none;
+}
+ a{
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+    padding: 15px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 5px grey;
+}
+
+.card img{
+    width: 200px;
+}

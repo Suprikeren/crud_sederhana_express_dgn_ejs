@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.card {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    box-shadow: 1px 1px 5px grey;
+}
+li {
+    list-style: none;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+button {
+    background-color: aqua;
+}

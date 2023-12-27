@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1> <%= category %> products</h1>
+    <h2><a href="/products/create">tambah data produk</a></h2>
+    <!-- ketika semua data produk tidak tampil maka -->
+    <% if(category !== "All") { %>
+        <a href="/products">Lihat semua Products</a>
+   <% } %>
+   <!-- // -->
+    <ol>
+        <% for (let product of products) { %>
+            <li>
+                <div class="card">
+                    <img src="/img/supri.png" alt="ini gambar"> <br>
+                    <a href="/products/<%= product._id %>"> <%= product.name %> <br> <%= product.brand %> <br> <%= product.category %></a>
+                </div>
+            </li>
+            <% } %> 
+    </ol>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah product</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <h1>Tambah data</h1>
+    <form action="/products/post" method="POST" />
+        <label for="name">Nama Products</label>
+        <input type="text" name="name" id="name" /> <br>
+        <label for="brand">Nama brand</label>
+        <input type="text" name="brand" id="brand"/><br>
+        <label for="color">Warna</label>
+        <input type="text" name="color" id="color" /><br>
+        <label for="price">Harga</label>
+        <input type="number" name="price" id="price" /><br>
+        <label for="category">kategori</label>
+        <select name="category" id="category">
+            <option value="">pilih kategori</option>
+            <option value="Baju">Baju</option>
+            <option value="Celana">Celana</option>
+            <option value="Aksesoris">Aksesoris</option>
+            <option value="Jaket">Jaket</option>
+        </select>
+        <br>
+        <button>
+            <a href="/products">kembali</a>
+        </button>
+        <br>
+        <button type="simpan">Simpan</button>
+    </form>
+</body>
+</html>
